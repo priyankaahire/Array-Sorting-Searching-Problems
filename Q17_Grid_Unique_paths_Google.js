@@ -21,9 +21,25 @@ Constraints:
 1 <= m, n <= 100
 
 */
+//* Appraoch: 1 : Brute Force solution
+//! TC: O(n) * O(m)
+//! SC: O(N2)
+
+let first_uniquePaths = function(m, n) {
+
+}
+
+//* Appraoch: 2 : Recursive Solution -> Dynamice Programming soln
+//! TC: O(N * M) : at max: m*n state : 
+//! SC: O(N * M) : Hash table and Recursive will take N*M
+let second_uniquePaths = function(m, n) {
+
+}
 
 
-//% Appraoch: Optimise one
+  
+
+//* Appraoch 3 : Optimise one
 //% Observation are important in this case
     //% *. Need to find the similarities is,
             //% Observation 1. Always find the 3 steps to reachout the finisher i.e start -> end taking 3 steps:
@@ -49,7 +65,8 @@ Constraints:
                         //% 
                    
 
-
+//! TC: O(m - 1) || O(n - 1)
+//! SC: O(1)
 let uniquePaths = function(m, n) {
     console.log("-------------------- Optimise Approach --------------------------")
     //% m: consider as row
@@ -67,4 +84,6 @@ let uniquePaths = function(m, n) {
     }
     return no_of_paths
 }
+let optimise_output = uniquePaths(3, 2);
+console.log(optimise_output)
 
