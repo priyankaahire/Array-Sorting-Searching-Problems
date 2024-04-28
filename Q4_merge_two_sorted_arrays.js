@@ -72,6 +72,8 @@
                    //% temp = arr1[i]; arr1[i] = arr2[i]; arr2[i] = temp
                //% After swapping arr2 should be shoretd one if not first need to arrange it in sorted mananer
                    //% Sorted: if(arra[j] < arra[i]) => temp = arr1[i]; arr1[i] = arr2[]j; arr2[j] = temp
+   //! TC: O(N1 * M1)
+   //! SC: O(1)
 
    let inserationSort = function(arr1, arr2) {
       console.log("********************** Insertion Sort *******************************")
